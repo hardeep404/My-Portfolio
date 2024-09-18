@@ -1,5 +1,4 @@
-# React + Vite
-Welcome to my personal portfolio website! This site showcases my skills, projects, and achievements. It's designed to provide an overview of my experience and demonstrate my capabilities in various areas of expertise.
+# Welcome to my personal portfolio website! This site showcases my skills, projects, and achievements. It's designed to provide an overview of my experience and demonstrate my capabilities in various areas of expertise.
 
 Technology Stack
 
@@ -8,6 +7,7 @@ The website is built using the following technologies:
 Frontend: HTML, CSS, JavaScript,frameworks:React,
 Version Control: Git,
 
+React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
