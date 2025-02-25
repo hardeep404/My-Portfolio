@@ -2,24 +2,20 @@ import React, { useRef } from "react";
 import "./Contacts.css";
 import InstagramIcon from "../../../src/assets/instagram.png";
 import LinkedinIcon from "../../../src/assets/linkedinIcon.png";
-import GitHub from "../../../src/assets/github.png"
+import GitHub from "../../../src/assets/github.png";
 
 import emailjs from "@emailjs/browser";
 import conf from "../../../conf";
 
-
-
-
 const Contacts = () => {
   const form = useRef();
-
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(`${conf.serviceKey}`, `${conf.templateKey}`, form.current, {
-        publicKey:`${conf.publicKey}`,
+        publicKey: `${conf.publicKey}`,
       })
       .then(
         () => {
@@ -63,9 +59,23 @@ const Contacts = () => {
         </button>
       </form>
       <div className="MediaLinks">
-     <a href="https://www.instagram.com/sainihardeep00786?igsh=MWh1MmcydmdnZjZuZg==" target="_blank"> <img src={InstagramIcon} alt="Icon" className="link" /></a>
-     <a href="https://www.linkedin.com/in/hardeep-saini-7a51b1327" target="_blank"><img src={LinkedinIcon} alt="Icon" className="link" /></a>
-     <a href="https://github.com/hardeep404" target="_blank"> <img src={GitHub} alt="Icon" className="link" /></a>
+        <a
+          href="https://www.instagram.com/sainihardeep00786?igsh=MWh1MmcydmdnZjZuZg=="
+          target="_blank"
+        >
+          {" "}
+          <img src={InstagramIcon} alt="Icon" className="link" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/hardeep-saini-7a51b1327"
+          target="_blank"
+        >
+          <img src={LinkedinIcon} alt="Icon" className="link" />
+        </a>
+        <a href="https://github.com/hardeep404" target="_blank">
+          {" "}
+          <img src={GitHub} alt="Icon" className="link" />
+        </a>
       </div>
     </section>
   );
